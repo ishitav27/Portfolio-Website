@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+     <title>Page Title</title>
+     <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+       <div class="nav-wrapper">
+
+           <div class="left-side">
+
+              <div class="nav-link-wrapper">
+                 <a href="index.html">Home</a>
+              </div>
+
+              <div class="nav-link-wrapper">
+                 <a href="feedback.html">Feedback</a>
+              </div>
+
+           </div>
+
+           <div class="right-side"> 
+               <div class="brand">
+                   <div>ISHITA VUDANRAO</div>
+               </div>
+           </div>
+
+       </div>
+       <div class="content-wrapper">
+           <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/travel.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/travellogo.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">My travel experiences.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/food.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/foodlogo.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">All the crazy yum food I got to discover.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/workshoplogo.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">Amazing and informative workshops attended.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/projectlogo.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">My projects.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/crondose.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">Coding tutorials and tips.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/dailysmarty.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">I love reading. Discover awesome book recommendations here!</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/education.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/educationLogo.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">My education.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/devtrunk.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">Online shop for developer happiness.</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/logos/edutechional.png" alt="">
+                  </div>
+      
+                  <div class="subtitle">Online technology tutorials.</div>
+                </div>
+              </div>
+           </div>
+       </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+</html>
